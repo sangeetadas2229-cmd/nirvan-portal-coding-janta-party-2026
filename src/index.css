@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Government Watermark Background Effect */
+.gov-watermark-bg {
+  position: relative;
+}
+
+.gov-watermark-bg::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  height: 480px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Emblem_of_India.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
