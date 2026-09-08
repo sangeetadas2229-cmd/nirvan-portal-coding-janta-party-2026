@@ -8,8 +8,8 @@ export default function Assessment() {
 
   const handleContinue = (e) => {
     e.preventDefault();
-    // Provide the path or route to the next page here
-    navigate('/dashboard'); // Or your next page route
+    // Navigate to the next route/page
+    navigate('/dashboard'); 
   };
 
   return (
